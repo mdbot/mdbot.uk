@@ -1,0 +1,43 @@
+:root {
+    --background-colour: #fcfcfc;
+    --foreground-colour: #1c1c1c;
+    --input-color: black;
+    --input-border: #d6d6d6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-colour: #1c1c1c;
+        --foreground-colour: #d6d6d6;
+        --input-background: #333333;
+        --input-color: #d6d6d6;
+        --input-border: #5b5b5b;
+    }
+}
+
+html, body {
+    background:  var(--background-colour);
+    color: var(--foreground-colour);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    width: 90%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
