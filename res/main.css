@@ -41,3 +41,17 @@ html, body {
     align-items: center;
     align-content: center;
 }
+footer {
+    position: absolute;
+    bottom: 5em;
+    height: 5em;
+}
+
+footer img {
+    opacity:0;
+    transition: opacity 500ms ease-in;
+}
+
+footer img:hover {
+    opacity:1 !important;
+}
